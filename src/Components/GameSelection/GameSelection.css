@@ -1,14 +1,75 @@
+.Jost {
+    font-family: 'Jost', sans-serif;
+}
+
 .GameSelection-CompleteContainer {
+    position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;;
-    width: 100vw;
-    height: 100vh;
-}
+    justify-content: center;
+    width: 90vw;
+    height: 100%;
+  }
+  
+  .GameSelection-CompleteContainer img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .Text-Overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex; /* added */
+    flex-direction: column;
+    justify-content: flex-start; /* added */
+    align-items: flex-start; /* added */
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+  }
+  
+  .Text-Overlay h1, h2, h6 {
+    background-color: transparent;
+    padding-left: 2rem;
+    margin: 0;
+    line-height: 1.5;
+  }
 
-.GameSelection-CompleteContainer img {
-    min-width: 100%;
-    min-height: 100%
-}
+  .Text-Overlay h1 {
+    font-size: 5vw;
+    font-weight: 700;
+    margin-top: 10px;
+  }
 
+  .GameSelection-Button {
+    position: absolute;
+    width: 100%; /* Add a width value */
+    height: 10%; /* Add a height value */
+    background-color: #E48F85;
+    color: rgb(0, 0, 0);
+    border: none;
+    bottom: 0%;
+    font-size: 3rem;
+    font-weight: 700;
+  }
+
+  .GameSelection-Button:hover {
+    background-color: #da7d72;
+    cursor: pointer;
+  }
+
+.GameSelection-Button:focus {
+    outline: none;
+}
+  
+  /* media query for screens smaller than 600px */
+  @media (max-width: 600px) {
+    .GameSelection-CompleteContainer img {
+      height: auto;
+      max-width: 100%;
+    }
+  }
+  
