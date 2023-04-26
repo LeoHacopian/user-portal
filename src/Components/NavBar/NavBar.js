@@ -13,7 +13,7 @@ export default function NavBar() {
                 <Link to='/'>
                     <FontAwesomeIcon className="HouseIcon" icon={faHouse} />
                 </Link>
-                <Link to='/Games'>
+                <Link to='GameSelection-CompleteContainer'>
                     <img className="Play-Button" src={PlayButton} alt="Play Button" />
                 </Link>
                 <a href='/LearnMore'>LEARN MORE</a>

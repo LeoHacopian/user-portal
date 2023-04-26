@@ -3,7 +3,7 @@
   justify-content: space-between;
   align-items: center;
   background-color: #EDE3D1;
-  height: 150px;
+  height: 20vh;
   width: 100%;
 }
 
@@ -49,11 +49,6 @@
   cursor: pointer;
 }
 
-.Sign-Up:active {
-  background-color: #c96b60;
-  transform: translateY(1px);
-}
-
 .Sign-Up:focus {
   outline: none;
 }
@@ -77,3 +72,4 @@ a:hover {
   width: 40px;
   height: 40px;
 }
+

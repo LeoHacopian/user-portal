@@ -1,5 +1,7 @@
 import './UserPortal.css'
 import GameSelection from '../GameSelection/GameSelection';
+import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
+import {faArrowDown} from '@fortawesome/free-solid-svg-icons'
 
 
 export default function UserPortal() {
@@ -11,9 +13,8 @@ export default function UserPortal() {
                 <h3 className='GameSelectionText'>PICK A GAME TO GET STARTED</h3>
                 <hr className='GameSelectionLine' />
             </div>
+            <FontAwesomeIcon className='ArrowDown' icon={faArrowDown} />
             <div className='GameSelection'>
-                <GameSelection />
-                <GameSelection />
                 <GameSelection />
             </div>
         </div>
