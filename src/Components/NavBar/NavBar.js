@@ -16,9 +16,9 @@ export default function NavBar() {
                 <Link to='GameSelection-CompleteContainer'>
                     <img className="Play-Button" src={PlayButton} alt="Play Button" />
                 </Link>
-                <a href='/LearnMore'>LEARN MORE</a>
-                <a href='/People'>PEOPLE</a>
-                <a href='/CarouselTest' className='Connect'>CONNECT</a>
+                <a href='/LearnMore'>Form Display</a>
+                <a href='/People'>Table</a>
+                <a href='/CarouselTest' className='Connect'>Connect</a>
             </div>
             <div className="SignUp-Social">
                 <button className="Sign-Up">SIGN UP!</button>

@@ -1,0 +1,35 @@
+.Form-Button {
+    display: inline-block;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    background-color: #7193ef;
+    color: #FFFFFF;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .Form-Button:hover {
+    background-color: #5b77c4;
+  }
+  
+  .Form-Button:focus {
+    outline: none;
+  }
+
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-gap: 20px;
+    margin: 0 auto; /* Center the grid horizontally */
+  }
+  
+  .Form-Button {
+    width: 10rem;
+    height: 5rem;
+  }
+  

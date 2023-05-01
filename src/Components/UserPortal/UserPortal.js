@@ -15,7 +15,9 @@ export default function UserPortal() {
             </div>
             <FontAwesomeIcon className='ArrowDown' icon={faArrowDown} />
             <div className='GameSelection'>
-                <GameSelection />
+                <GameSelection className='item'/>
+                <GameSelection className='item'/>
+                <GameSelection className='item'/>
             </div>
         </div>
     )

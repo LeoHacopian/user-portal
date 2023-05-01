@@ -1,0 +1,53 @@
+:root {
+    --orangeButton: #C55B10;
+    --Techmetrica-Blue: #121D31;
+    --orangeText: #EF8354;
+    --background-red: #A03929;
+    --background-grey: #73656B; 
+    --background-lightgrey: #C5C2CB;    
+    --background-pink: #A68C95;
+    --background-lightblue: #CACFE9;
+    --background-darkblue: #2A3158;
+    --form-background: #FFFFFF;
+    --black: #262626;
+    --white: #FFFFFF;
+    --text-font: 'Space Grotesk';
+    --text-normal: 500;
+    --text-bold: 700;
+    --borderRadius: 6px;
+
+}
+
+.theme-1 {
+    /* Title */
+    --title-background: var(--background-grey);
+
+    /* Navbar */
+    --navbar-background: var(--black);
+
+    /* PlayGame */
+    --playGame-background: var(--background-pink);
+    --playGame-heading: var(--background-red);
+    --playGame-heading-text: var(--background-grey);
+
+    /* LearnMorePage */
+    --learnMore-background: var(--background-red);
+    --learnMore-description-area: var(--background-grey);
+
+    /* PeoplePage */
+    --peoplePage-background: var(--background-red);
+    --peoplePage-people-area: var(--background-grey);
+
+    /* GameCard */
+    --gameCard-background: var(--background-grey);
+    --gameCard-header: var(--background-red);
+    --gameCard-font: var(--white);
+    --gameCard-button: var(--orangeButton);
+
+    /* LoginPage */
+    --login-background: var(--background-red);
+    --login-formBackground: var(--form-background);
+
+    /* Footer */
+    --footer-background: var(--navbar-background);
+}
