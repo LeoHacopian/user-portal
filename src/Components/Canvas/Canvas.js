@@ -5,7 +5,32 @@ import apiClient from "/Users/leohacopian/Documents/user-portal/src/services/api
 
 export default function Canvas({ form }) {
 
-  const [data, setData] = useState([]);
+  const [formData, setFormData] = useState([]);
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    const formResponse = {
+      formId: form._id,
+      responses: [],
+    };
+
+    form.question.forEach((question) => {
+      const response = {
+        question: question._id,
+        answer: e.target[question._id]?.value || '',
+      };
+      formResponse.responses.push(response);
+    });
+
+    const { data, error } = await apiClient.register(formResponse);
+    console.log(data);
+    if (data) {
+      console.log(data);
+    }
+    if (error) {
+      console.log(error);
+    }
+  };
 
   return (
     <form className='Form-Container'>
@@ -15,7 +40,7 @@ export default function Canvas({ form }) {
           {renderFormField(question)}
         </div>
       ))}
-      <button type="submit">Submit</button>
+      <button type="submit" onClick={handleSubmit}>Submit</button>
     </form>
   );
 };
@@ -29,7 +54,7 @@ const renderFormField = (question) => {
         <div>
           {question.answers.map((answer, index) => (
             <label className="label-answer" key={index}>
-              <input className="RadioButton-Input" type="radio" id={`${question._id}-${index}`} name={question._id} value={answer} />
+              <input className="RadioButton-Input" type="radio" id={`${question._id}-${index}`} name={question._id} value={answer}/>
               {answer}
             </label>
           ))}

@@ -34,6 +34,10 @@ class ApiClient {
         return await this.request( {endpoint: "question/allItems", method: "GET", data: {}} )
     }
 
+    async register(formResponse) {
+        return await this.request( {endpoint: "form/register", method: "POST", data: formResponse} )
+    }
+
 }
 
 export default new ApiClient("http://localhost:3005")
