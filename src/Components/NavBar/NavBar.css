@@ -12,6 +12,8 @@
   justify-content: space-evenly;
   align-items: center;
   width: 75%;
+  font-weight: bold;
+  font-size: large;
 }
 
 .HouseIcon {
@@ -31,9 +33,6 @@
   height: 50px; /* Add a height value */
 }
 
-.Play-Button:active {
-  transform: translateY(1px);
-}
 
 .Sign-Up {
   width: 150px; /* Add a width value */

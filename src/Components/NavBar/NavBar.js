@@ -16,13 +16,15 @@ export default function NavBar() {
                 <Link to='GameSelection-CompleteContainer'>
                     <img className="Play-Button" src={PlayButton} alt="Play Button" />
                 </Link>
-                <a href='/LearnMore'>Form Display</a>
-                <a href='/People'>Table</a>
-                <a href='/CarouselTest' className='Connect'>Connect</a>
+                <a href='/LearnMore'>QUESTIONNAIRES</a>
+                <a href='/People'>TABLE</a>
+                <a href='/CarouselTest' className='Connect'>CONNECT</a>
             </div>
             <div className="SignUp-Social">
                 <button className="Sign-Up">SIGN UP!</button>
-                <FontAwesomeIcon className='TwitterIcon' icon={faTwitter} size="lg" style={{color: "#D63335"}} />
+                <a href='https://twitter.com/'>
+                    <FontAwesomeIcon className='TwitterIcon' icon={faTwitter} size="lg" style={{color: "#D63335"}} />
+                </a>
             </div>
         </div>    
     )
