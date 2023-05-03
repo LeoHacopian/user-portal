@@ -16,6 +16,7 @@ function App() {
         <NavBar />
         <Routes>
           <Route path="/" element={<UserPortal />} />
+          <Route path='/Admin' element={<UserPortal />} />
           <Route path='/People' element={<Form />} />
           <Route path="/LearnMore" element={<CanvasFormIcons selectedForm={selectedForm} setSelectedForm={setSelectedForm}/>} />
           <Route path="/Form/:id" element={<Canvas form={selectedForm} />} />

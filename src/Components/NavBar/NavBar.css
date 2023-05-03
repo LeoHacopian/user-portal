@@ -16,12 +16,38 @@
   font-size: large;
 }
 
+.Admin-NavBar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #AEB8FE;
+  height: 15vh;
+  width: 100%;
+}
+
+.Admin-NavBar-Items {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 75%;
+  font-weight: bold;
+  font-size: large;
+}
+
+
 .HouseIcon {
   width: 25px;
   height: 25px;
 }
 
 .SignUp-Social {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 20%;
+}
+
+.LogOut {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -43,6 +69,16 @@
   border-radius: 10px;
 }
 
+.LogOut-Button {
+  width: 150px; /* Add a width value */
+  height: 50px; /* Add a height value */
+  background-color: #939ce6;
+  color: rgb(0, 0, 0);
+  border: none;
+  border-radius: 10px;
+  font-weight: bold;
+}
+
 .Sign-Up:hover {
   background-color: #da7d72;
   cursor: pointer;
@@ -52,6 +88,14 @@
   outline: none;
 }
 
+.LogOut-Button:hover {
+  background-color: #7d85c7;
+  cursor: pointer;
+}
+
+.LogOut-Button:focus {
+  outline: none;
+}
 
 a {
   text-decoration: none;
