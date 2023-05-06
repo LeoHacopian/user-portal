@@ -7,6 +7,11 @@ import {faHouse} from '@fortawesome/free-solid-svg-icons'
 
 
 export default function NavBar() {
+
+    function scrollToSection() {
+        var section = document.getElementById("GameSection");
+        section.scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"});
+      }
     const location = useLocation();
 
     const isAdminPath = location.pathname === '/Admin';
@@ -34,9 +39,7 @@ export default function NavBar() {
                     <Link to='/'>
                         <FontAwesomeIcon className="HouseIcon" icon={faHouse} />
                     </Link>
-                    <Link to='GameSelection-CompleteContainer'>
-                        <img className="Play-Button" src={PlayButton} alt="Play Button" />
-                    </Link>
+                    <img className="Play-Button" src={PlayButton} onClick={scrollToSection} alt="Play Button" />
                     <a href='/LearnMore'>QUESTIONNAIRES</a>
                     <a href='/People'>TABLE</a>
                     <a href='/CarouselTest' className='Connect'>CONNECT</a>

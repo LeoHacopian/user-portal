@@ -10,6 +10,8 @@ import Footer from '../Footer/Footer';
 
 export default function UserPortal() {
 
+
+      
     const location = useLocation();
     const isAdminPath = location.pathname === '/Admin';
 
@@ -37,7 +39,7 @@ export default function UserPortal() {
                     <hr className='GameSelectionLine' />
                 </div>
                 <FontAwesomeIcon className='ArrowDown' icon={faArrowDown} />
-                <div className='GameInfo-Container'>
+                <div id='GameSection' className='GameInfo-Container'>
                     <img className='GameSelection-Image' src={Drone} alt='Game Selection' />
                     <div className='GameInfo-Text'>
                         <h3 className='GameInfo-Title'>DRONE DECISIONS</h3>
