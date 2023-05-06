@@ -68,3 +68,140 @@
   flex-shrink: 0;
   scroll-snap-align: start;
 }
+
+.Admin-Portal {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #AEB8FE;
+  height: 100vh;
+}
+
+.Admin-TechmetricaTitle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #121D31;
+  font-size: 8vw;
+  font-weight: bold;
+  width: 100%;
+  overflow: hidden;
+}
+
+
+
+.Admin-TechmetricaSlogan {
+  color: var(--Font-Blue);
+  font-size: 3vw;
+  width: 100%;
+  font-weight: bold;
+  margin-top: 50px;
+  margin-bottom: 75px;
+  overflow: hidden;
+}
+
+.Admin-GameSelection-Container {
+  align-items: center;
+  display: flex;
+  height: 8vh;
+  justify-content: center;
+  max-width: 85vw;
+}
+
+.GameSelectionLine {
+  border: 5px solid #121D31;
+  width: 85vw;
+}
+
+.Admin-GameSelectionText {
+  color: #121D31;
+  background-color: #AEB8FE;
+  font-family: sans-serif;
+  font-size: 2.5rem;
+  padding: 25px 50px;
+  position: absolute;
+}
+
+.GameInfo-Container {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 2%;
+}
+
+.GameSelection-Image {
+  border-radius: 20px;
+  transform: scale(0.8);
+}
+
+.GameInfo-Text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-left: 2%;
+  margin-right: 4%;
+  width: 50%;
+  transform: translateY(-5%);
+}
+
+.GameInfo-Container2 {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.GameSelection-Image2 {
+  border-radius: 20px;
+
+}
+
+.GameInfo-Text2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-left: 2%;
+  width: 50%;
+}
+
+.GameInfo-Title {
+  font-size: 2.5vw;
+  font-weight: bold;
+  margin-bottom: 3%;
+}
+
+p {
+  font-size: 1.5vw;
+  text-align: left;
+}
+
+.PlayGame {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: 2%;
+  outline: none;
+  border: none;
+  border-radius: 10px;
+  height: 7vh;
+  background-color: rgb(236, 113, 113);
+  font-size: large;
+}
+
+.PlayGame:hover {
+  background-color: rgb(221, 70, 70);
+  cursor: pointer;
+}
+
+.PlayGame:active {
+  background-color: rgb(172, 49, 49);
+  cursor: pointer;
+  text-decoration: none;
+  outline: none;
+}
+
+.PlayGame:focus {
+  outline: none;
+}
