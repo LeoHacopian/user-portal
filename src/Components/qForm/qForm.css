@@ -1,3 +1,4 @@
+
 #AddButton {
     padding: 10px;
     margin-top: 20px;
@@ -15,11 +16,11 @@
 
 .questionnaire-container {
   display: flex;
+  width: 100%;
   position: relative;
   flex-direction: column; /* this makes the container a column flex container */
   justify-content: flex-start; /* aligns the content to the top of the container */
   align-items: center; /* centers the content horizontally */
-  background-color: #EDE3D1;
   min-height: 100vh; /* ensures the container takes up the full height of the viewport */
 
 }

@@ -166,7 +166,7 @@ function QForm({ questionsData, setQuestionsData }) {
 
     console.log(JSON.stringify(questionnaire, null, 1));
 
-    axios.post('http://localhost:5000/questionnaire/register', questionnaire)
+    axios.post('http://localhost:3005/question/register', questionnaire)
       .then(response => {
         console.log('Questionnaire submitted successfully:', response);
       })
@@ -261,7 +261,7 @@ function QForm({ questionsData, setQuestionsData }) {
                   value={q.type}
                   onChange={event => handleChangeInput(q.id, index, event)}
                 >
-                  <MenuItem value={'Checkbox'}>Checkbox</MenuItem>
+                  <MenuItem value={'Radio Button'}>Radio Button</MenuItem>
                   <MenuItem value={'Slider'}>Slider</MenuItem>
                   <MenuItem value={'Textfield'}>Textfield</MenuItem>
                 </Select>

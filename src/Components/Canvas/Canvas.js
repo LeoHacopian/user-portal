@@ -100,6 +100,8 @@ const renderFormField = (question, handleInputChange) => {
       );
     case 'Date Picker':
       return <input type="date" id={question._id} name={question._id} />;
+    case 'Textfield':
+      return <input type="string" id={question._id} name={question._id} />;
 
     // Add more cases for different question types as needed
 
