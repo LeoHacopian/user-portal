@@ -34,8 +34,11 @@ class ApiClient {
         return await this.request( {endpoint: "question/allItems", method: "GET", data: {}} )
     }
 
-    async register(formResponse) {
-        return await this.request( {endpoint: "form/register", method: "POST", data: formResponse} )
+    async register(formData) {
+        console.log("formData in api client")
+        console.log(formData)
+        return await axios.post('http://localhost:3005/form/register', formData)
+        //return await this.request( {endpoint: "form/register", method: "POST", data: formData} )
     }
 
 }

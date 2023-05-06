@@ -1,7 +1,7 @@
 import './CanvasFormIcons.css'
 import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import apiClient from "/Users/leohacopian/Documents/user-portal/src/services/apiClient.js";
+import apiClient from "../../../src/services/apiClient.js";
 import Canvas from './Canvas.js';
 
 export default function CanvasFormIcons({ selectedForm, setSelectedForm }) {

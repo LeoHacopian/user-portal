@@ -1,10 +1,10 @@
 import './Form.css'
 import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import apiClient from "/Users/leohacopian/Documents/user-portal/src/services/apiClient.js";
-
+import apiClient from "../../../src/services/apiClient.js";
 
 export default function Form() {
+
 
     const [data, setData] = useState([]);
 
