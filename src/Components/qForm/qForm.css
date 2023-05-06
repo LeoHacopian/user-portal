@@ -1,0 +1,86 @@
+#AddButton {
+    padding: 10px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    margin-left: 20px;
+}
+
+#SubmitButton {
+    padding: 10px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    margin-left: 20px;
+}
+
+
+.questionnaire-container {
+  display: flex;
+  position: relative;
+  flex-direction: column; /* this makes the container a column flex container */
+  justify-content: flex-start; /* aligns the content to the top of the container */
+  align-items: center; /* centers the content horizontally */
+  background-color: #EDE3D1;
+  min-height: 100vh; /* ensures the container takes up the full height of the viewport */
+
+}
+
+.qPortal {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .tabbed-window-container {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1; /* Allow the container to grow and fill available space */
+    overflow-y: auto; /* Add a scrollbar when needed */
+
+  }
+  
+  .tabContentWrapper {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1; /* Allow the container to grow and fill available space */
+    overflow-y: auto; /* Add a scrollbar when needed */
+    border: none;
+    border-radius: 12px;
+    outline: none;
+  }
+  
+
+.tabContentWrapper{
+    background-color: white;
+    border: 1px solid #444;
+    margin-bottom: 20px;
+}
+
+.top-navbar {
+    position: relative;
+    top: 0px;
+    height: 100px;
+    background-color: white;
+    border-radius: 12px;
+    border: 1px solid #444;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+}
+
+.bottom-navbar {
+    position: relative;
+    height: 80px;
+    bottom: 0;
+}
+
+.options {
+    position: relative;
+  }
+  
+ 
+ 
+
+
+ 
+
+
+ 

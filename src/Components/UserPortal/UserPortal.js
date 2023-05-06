@@ -26,7 +26,6 @@ export default function UserPortal() {
                 <hr className='GameSelectionLine' />
             </div>
             <FontAwesomeIcon className='ArrowDown' icon={faArrowDown} />
-            <Footer />
         </div>
     )
     } else {
@@ -58,7 +57,6 @@ export default function UserPortal() {
                     </div>
                     <img className='GameSelection-Image' src={Robot} alt='Game Selection' />
                 </div>
-                <Footer />
             </div>
         )
     }

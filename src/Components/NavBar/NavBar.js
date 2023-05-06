@@ -8,13 +8,17 @@ import {faHouse} from '@fortawesome/free-solid-svg-icons'
 
 export default function NavBar() {
 
-    function scrollToSection() {
-        var section = document.getElementById("GameSection");
-        section.scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"});
-      }
     const location = useLocation();
+    const isAdminPath = location.pathname.startsWith('/Admin');
+    const isHomePage = location.pathname === '/';
 
-    const isAdminPath = location.pathname === '/Admin';
+    function scrollToSection() {
+        if(isHomePage) {
+            var section = document.getElementById("GameSection");
+            section.scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"});
+        }
+      }
+
 
     if (isAdminPath) {
     return (
@@ -23,9 +27,9 @@ export default function NavBar() {
                 <Link to='/'>
                     <FontAwesomeIcon className="HouseIcon" icon={faHouse} />
                 </Link>
-                <a href='/LearnMore'>FORM CREATION</a>
+                <a href='/Admin/FormCreation'>FORM CREATION</a>
                 <a href='/People'>TABLE</a>
-                <a href='/CarouselTest' className='Connect'>VIEW REPORTS</a>
+                <a href='/FormCreation' className='Connect'>VIEW REPORTS</a>
             </div>
             <div className="LogOut">
                 <button className="LogOut-Button">LOG OUT</button>
@@ -42,7 +46,7 @@ export default function NavBar() {
                     <img className="Play-Button" src={PlayButton} onClick={scrollToSection} alt="Play Button" />
                     <a href='/LearnMore'>QUESTIONNAIRES</a>
                     <a href='/People'>TABLE</a>
-                    <a href='/CarouselTest' className='Connect'>CONNECT</a>
+                    <a href='/FormCreation' className='Connect'>CONNECT</a>
                 </div>
                 <div className="SignUp-Social">
                     <Link to='/Admin'>
