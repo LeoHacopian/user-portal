@@ -6,7 +6,6 @@ import Form from '../Form/Form';
 import Canvas from '../Canvas/Canvas';
 import CanvasFormIcons from '../Canvas/CanvasFormIcons';
 import { useState } from 'react';
-import QPortalNavbar from '../QPortalNavbar/QPortalNavbar'
 import Footer from '../Footer/Footer';
 
 function App() {
@@ -18,10 +17,8 @@ function App() {
         <NavBar />
         <Routes>
           <Route path="/" element={<UserPortal />} />
-          <Route path='/Admin' element={<UserPortal />} />
-          <Route path='/People' element={<Form />} />
-          <Route path='/Admin/FormCreation' element={<QPortalNavbar />} />
-          <Route path="/LearnMore" element={<CanvasFormIcons selectedForm={selectedForm} setSelectedForm={setSelectedForm}/>} />
+          <Route path='/Debug' element={<Form />} />
+          <Route path="/Questionnaires" element={<CanvasFormIcons selectedForm={selectedForm} setSelectedForm={setSelectedForm}/>} />
           <Route path="/Form/:id" element={<Canvas form={selectedForm} />} />
         </Routes>
         <Footer />

@@ -28,3 +28,17 @@
     border-bottom: 1px solid #ccc; /* Add a thin border at the bottom */
     padding-bottom: 5px;
 }
+
+.Form-Name {
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 50%;
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
+}

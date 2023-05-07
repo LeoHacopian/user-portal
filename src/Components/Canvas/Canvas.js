@@ -61,6 +61,7 @@ export default function Canvas({ form }) {
 
   return (
     <form className='Form-Container'>
+      <h1 className='Form-Name'>{form.name}</h1>
       {form.question.map((question, index) => (
         <div className="Question-Container" key={index}>
           <label htmlFor={question._id}>{question.prompt}</label>
